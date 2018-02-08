@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+     <!-- Library jquery (General use)-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Options</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="navbar-inner">
+
+        <div class="middle">Acampamento de Carnaval Comunidade 13</div>
+
+    </div><div class="meter">
+    <div> Nome da empresa:</div>
+    <select id="myselect">
+  <option value="BP">BP SGPSS</option>
+  <option value="SO">Somálias Ltd</option>
+  <option value="SH">SH.SA</option>
+  <option value="VG">Vascos e filhos</option>
+</select>
+</div>
+<div class="botoes">
+    <button id="bancar" onclick="bancar()">Por no Banco</button>
+        <button id="suave" onclick="suave()">Investir (seguro)</button>
+        <button id="gress" onclick="duro()">Investir (Agressivo)</button>
+    </div>
+
+    <div class="resultados">Resultado: <span id="mid"></span>
+        <div id="result"></div>
+    </div>
+
+
+
+
+     
+    <script type="text/javascript" src="js/main.js"></script>
+ 
+</body>
+
+</html>

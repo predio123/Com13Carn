@@ -1,0 +1,81 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+body
+{
+    background-image: url("../imagem/logo.png");
+     background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.middle {
+
+    font-size: 40px;
+    font-weight: 700;
+    padding: 15px;
+    font-family: "Arial", Helvetica, sans-serif;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: dodgerblue;
+    background: white;
+    border: 1px solid black;
+}
+
+.meter,
+.botoes,
+.resultados
+{
+    position: relative;
+    top:250px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Arial", Helvetica, sans-serif;
+    margin-top: 25px;
+    
+    
+}
+
+button
+{
+   width: 20%;
+    text-align: center;
+    padding: 7px;
+    font-family: "Arial", Helvetica, sans-serif; 
+    border-radius: 10px;
+}
+
+select
+{
+    font-size: 15px;
+     padding: 10px;
+        font-family: "Arial", Helvetica, sans-serif; 
+
+    /**width: 60%;
+    /**width: 60%;
+    text-align: center;
+    
+    padding: 2px;**/
+}
+
+option
+{
+   font-size: 15px; 
+     font-family: "Arial", Helvetica, sans-serif; 
+}
+
+#result
+{
+    font-size: 15px;
+    text-align: center;
+    font-family: "Arial", Helvetica, sans-serif; 
+    max-height: 120px;
+    overflow-y: scroll;
+}
