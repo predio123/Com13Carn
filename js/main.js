@@ -1,5 +1,5 @@
 var zed = 0;
-var cars = [0,0, 0,-0.36,-0.16, 0.65, 0.08, 0.14, -0.6, 0.7, 0.7];
+var cars = [0,0, 0,-0.36,-0.16, 0.65, 0.08, 0.14, -0.5, 0.6, 0.6];
 
 $(function () {
     $("#baixo").css('background', 'red');
@@ -30,10 +30,10 @@ function bancar() {
 
 function suave() {
     currentf = $("#myselect option:selected").text();
-    tento = Math.floor((Math.random() * 11) - 5);
-    tento = Math.round(tento) + 5 * zed;
+    tento = Math.floor((Math.random() * 15) - 7) + 5 * zed;
+    tento = Math.round(tento);
     //console.log(tento);
-    tre = tento.toString();
+  
 
 
     if (tento > 5) {
@@ -41,7 +41,7 @@ function suave() {
     } else if (tento < -5) {
         tento = -5;
     }
-
+  tre = tento.toString();
     if (tento === 0) {
         $("#mid").text("0");
         $("#mid").css('color', 'blue');
@@ -63,10 +63,10 @@ function suave() {
 
 function duro() {
     currentf = $("#myselect option:selected").text();
-    tento = Math.floor((Math.random() * 21) - 10);
-    tento = Math.round(tento) + 10 * zed;
+    tento = Math.floor((Math.random() * 25) - 12)+ 10 * zed;
+    tento = Math.round(tento) ;
     //console.log(tento);
-    tre = tento.toString();
+    
 
 
     if (tento > 10) {
@@ -74,7 +74,7 @@ function duro() {
     } else if (tento < -10) {
         tento = -10;
     }
-
+tre = tento.toString();
     if (tento === 0) {
         $("#mid").text("0");
         $("#mid").css('color', 'blue');
