@@ -18,8 +18,9 @@
 <body>
 
     <div class="navbar-inner">
-
-        <div class="middle">Mercado</div>
+<div class="logo subs"></div>
+        <div class="middle">Mercado<span class="h" onclick="help()"><i class="far fa-question-circle"></i></span></div>
+        <div class="logo add"></div>
 
     </div>
     <div class="meter">
@@ -27,7 +28,7 @@
         <select id="myselect">
   <option value="BP">BP SGPSS</option>
   <option value="SO">Somálias Ltd</option>
-  <option value="SH">SH.SA</option>
+  <option value="SH">Stephen & Hawking</option>
   <option value="VG">Vascos e filhos</option>
 </select>
     </div>
@@ -51,6 +52,16 @@
     </div>
 
 
+    <div id="page"> <strong onclick="help()" style="z-index:6001;color:red;">Regressar</strong> <br> Esta é a aplicação que simula o mercado durante todo o acampamento.<br>Um investidor tem 3 formas de aplicar o seu dinheiro:
+    <ul>
+        <li><strong>Por o dinheiro no banco:</strong> O capital está seguro, mas os lucros a tirar não são consideráveis. Podendo ser 0.</li>
+        <li><strong>Investimento seguro:</strong> O capital está em risco mas é considerado baixo, não havendo nem lucros nem perdas superiores a 5 pontos.</li>
+        <li><strong>Investimento de risco:</strong> O capital está em jogo, podendo os resultados ser muito positivos como muito negativos. Os ganhos e perdas podem chegar aos 10pontos.</li>
+        </ul>
+    O mercado é maioritariamente aleatório, mas tem tendencias, há medida que as sessões passam (o número indicado na parte inferior da APP), as tendencias do mercado vão sendo alteradas, havendo melhores alturas para investir e melhores alturas para bancar. Infelizmente, o mercado é inesperado e essas tendencias são secretas. Estão programadas 11 sessões, sendo que a sessão 0 é puramente aleatório, não havendo tendencia.<br><br><strong>Como Investir:</strong> Basta escolher a empresa e escolher a opção para esta sessão. A app de seguida diz o resultado da empresa, bem como adiciona ao registo das restantes transações.
+        <br> Bons Investimentos!
+    </div>
+    
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>

@@ -7,9 +7,7 @@ body {
 }
 
 body {
-    background-image: url("../imagem/logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: -webkit-linear-gradient(-45deg, #404c86 50%, #d380aa 100%);
 
 }
 
@@ -78,17 +76,16 @@ option {
     width: 100%;
     font-family: "Arial", Helvetica, sans-serif;
 }
-input
-{
+
+input {
     font-size: 30px;
     text-align: center;
     font-family: "Arial", Helvetica, sans-serif;
     width: 40%;
 }
 
-.icon
-{
-  font-size: 30px;
+.icon {
+    font-size: 30px;
     color: white;
     background: black;
     box-shadow: 20;
@@ -97,16 +94,58 @@ input
     border-radius: 15px;
 }
 
-.verniz
-{
+.verniz {
     background: white;
     padding: 0 2px;
     border-radius: 10px;
 }
 
-#mid
-{
+#mid {
     background: white;
     border-radius: 5px;
     padding: 4px;
+}
+
+.logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../imagem/logo.png);
+    top: -15px;
+    z-index: 5000;
+    background-size: contain;
+}
+
+.add {
+    right: 15%;
+}
+
+.subs {
+    left: 15%;
+}
+
+.h {
+    font-size: 25px;
+    color: skyblue;
+    background: forestgreen;
+    margin: 5px 10px;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+#page {
+    display: none;
+    width: calc(100%-10px);
+    height: 100%;
+    background: white;
+    z-index: 6000;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 20px;
+    font-family: "Arial", Helvetica, sans-serif;
+    padding: 5px;
 }

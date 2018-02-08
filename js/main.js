@@ -9,7 +9,7 @@ $(function () {
 function bancar() {
     var currentf = $("#myselect option:selected").text(),
         tento = Math.random();
-    console.log(tento);
+    //console.log(tento);
     if (tento < 0.1) {
         $("#mid").text("+2");
         $("#mid").css('color', 'green');
@@ -103,7 +103,7 @@ function upper() {
         $("#baixo").css('background', 'black');
     }
     numer = $("#myNumber").val();
-    zed = cars[numer];
+    zed = cars[numer-1];
     if (numer === "11") {
         $("#cima").css('background', 'red');
     }
@@ -118,8 +118,12 @@ function downer() {
         $("#cima").css('background', 'black');
     }
     numer = $("#myNumber").val();
-    zed = cars[numer];
+    zed = cars[numer-1];
     if (numer === "0") {
         $("#baixo").css('background', 'red');
     }
+}
+
+function help(){
+    $("#page").toggle();
 }
