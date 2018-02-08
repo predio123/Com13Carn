@@ -4,12 +4,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-     <!-- Library jquery (General use)-->
+    <!-- Library jquery (General use)-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Options</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+    <!-- Use of icons from Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
@@ -18,18 +21,19 @@
 
         <div class="middle">Acampamento de Carnaval Comunidade 13</div>
 
-    </div><div class="meter">
-    <div> Nome da empresa:</div>
-    <select id="myselect">
+    </div>
+    <div class="meter">
+        <div> Nome da empresa:</div>
+        <select id="myselect">
   <option value="BP">BP SGPSS</option>
   <option value="SO">Somálias Ltd</option>
   <option value="SH">SH.SA</option>
   <option value="VG">Vascos e filhos</option>
 </select>
-</div>
-<div class="botoes">
-    <button id="bancar" onclick="bancar()">Por no Banco</button>
-        <button id="suave" onclick="suave()">Investir (seguro)</button>
+    </div>
+    <div class="botoes">
+        <button id="bancar" onclick="bancar()">Depositar Banco</button>
+        <button id="suave" onclick="suave()">Investir (Seguro)</button>
         <button id="gress" onclick="duro()">Investir (Agressivo)</button>
     </div>
 
@@ -37,12 +41,18 @@
         <div id="result"></div>
     </div>
 
+    <div id="guage">
+        <span class="icon" onclick="upper()" id="cima"> <i class="fas fa-chevron-up"></i></span>
+        <input type="number" id="myNumber" value="0">
+        <span class="icon" onclick="downer()" id="baixo"><i class="fas fa-chevron-down"></i></span>
 
 
 
-     
+    </div>
+
+
     <script type="text/javascript" src="js/main.js"></script>
- 
+
 </body>
 
 </html>
