@@ -1,5 +1,5 @@
 var zed = 0;
-var cars = [0,0, 0,  -0.6, 0.7, 0.7];
+var cars = [0,0, 0,-0.36,-0.16, 0.65, 0.08, 0.14, -0.6, 0.7, 0.7];
 
 $(function () {
     $("#baixo").css('background', 'red');
